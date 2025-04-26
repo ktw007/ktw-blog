@@ -1,0 +1,30 @@
+/* 自定义悬停图片效果 */
+.hover-image-link {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  color: #1a73e8;
+}
+
+.hover-image-link:hover {
+  text-decoration: underline;
+}
+
+.hover-image-link:hover .hover-image {
+  display: block;
+}
+
+.hover-image {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  background-color: white;
+  padding: 8px;
+  margin-top: 10px;
+} 
